@@ -1,0 +1,15 @@
+.line{
+    border-bottom: 1px solid #EBF0FC;
+}
+.main-src-btn{
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    border-color: #0C1B9B;
+    background-color: #0C1B9B;
+}
+.form-control{
+    border-radius: 5px !important;
+background: #FFF !important;
+box-shadow: 0px 4px 50px 4px rgba(36, 52, 192, 0.12) !important;
+border-color: #FFF !important;
+}

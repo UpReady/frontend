@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import MainArea from "../Components/MainArea";
 
 function MainPage() {
   return (
-    <div>MainPage</div>
-  )
+    <React.Fragment>
+      <MainArea/>
+    </React.Fragment>
+  );
 }
 
-export default MainPage
+export default MainPage;
