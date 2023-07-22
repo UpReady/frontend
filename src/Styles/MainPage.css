@@ -1,15 +1,53 @@
-.line{
-    border-bottom: 1px solid #EBF0FC;
+.line {
+  border-bottom: 1px solid #ebf0fc;
 }
-.main-src-btn{
-    font-family: 'Jost', sans-serif;
-    font-weight: 500;
-    border-color: #0C1B9B;
-    background-color: #0C1B9B;
+.main-src-btn {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  border-color: #0c1b9b;
+  background-color: #0c1b9b;
 }
-.form-control{
-    border-radius: 5px !important;
-background: #FFF !important;
-box-shadow: 0px 4px 50px 4px rgba(36, 52, 192, 0.12) !important;
-border-color: #FFF !important;
+.form-control {
+  border-radius: 5px !important;
+  background: #fff !important;
+  box-shadow: 0px 4px 50px 4px rgba(36, 52, 192, 0.12) !important;
+  border-color: #fff !important;
+}
+.header-highlights {
+  color: #071bc8;
+  font-family: "Jost", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.card {
+  border-radius: 10px;
+  border-color: #fff;
+  background: linear-gradient(180deg, #e7ecf8 0%, rgba(231, 236, 248, 0) 100%);
+  box-shadow: 0px 4px 50px 3px rgba(228, 228, 228, 0.25);
+}
+.job-style {
+  color: #0c1b9b;
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.company-name {
+  color: #547ee9;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.city-name {
+  color: #a9a9a9;
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
