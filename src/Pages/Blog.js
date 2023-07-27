@@ -16,7 +16,7 @@ function Blog() {
       <div className=" mb-5">
         <Row>
           <Col lg={3} sm={12}>
-            <div className="card pt-3 pb-3 px-2">
+            <div className="card-blog pt-3 pb-3 px-2">
               <Image className="mb-3" src={Blog5} width="100%" />
               <div className="card-title px-2">
                 İş görüşmesinde nelere dikkat edilmeli ?
@@ -29,7 +29,7 @@ function Blog() {
             </div>
           </Col>
           <Col lg={3} sm={12}>
-            <div className="card pt-3 pb-3 px-2">
+            <div className="card-blog pt-3 pb-3 px-2">
               <Image className="mb-3" src={Blog3} width="100%" />
               <div className="card-title px-2">
                 İş görüşmesinde nelere dikkat edilmeli ?
@@ -42,7 +42,7 @@ function Blog() {
             </div>
           </Col>
           <Col lg={3} sm={12}>
-            <div className="card pt-3 pb-3 px-2">
+            <div className="card-blog pt-3 pb-3 px-2">
               <Image className="mb-3" src={Blog4} width="100%" />
               <div className="card-title px-2">
                 İş görüşmesinde nelere dikkat edilmeli ?
@@ -55,7 +55,7 @@ function Blog() {
             </div>
           </Col>
           <Col lg={3} sm={12}>
-            <div className="card pt-3 pb-3 px-2">
+            <div className="card-blog pt-3 pb-3 px-2">
               <Image className="mb-3" src={Blog5} width="100%" />
               <div className="card-title px-2">
                 İş görüşmesinde nelere dikkat edilmeli ?

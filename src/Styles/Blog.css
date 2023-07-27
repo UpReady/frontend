@@ -5,7 +5,7 @@ font-size: 22px;
 font-style: normal;
 font-weight: 500;
 }
-.card{
+.card-blog{
     border-radius: 10px;
 background: #FFF;
 box-shadow: 0px 4px 4px 0px #D4E0FF;
@@ -24,7 +24,7 @@ box-shadow: 0px 4px 4px 0px #D4E0FF;
     font-style: normal;
     font-weight: 400;
 }
-.card:hover {
+.card-blog:hover {
     /* background-color: #dfecf9; */
     background-color: white;
     box-shadow: 0px 4px 100px 0px #B0C4F9;
