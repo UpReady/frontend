@@ -5,7 +5,7 @@ import Logo from "../img/header-logo.svg";
 
 function Header() {
   return (
-    <Container>
+    <Container fluid>
       <Navbar expand="lg" className="bg-body-tertiary">
         <Navbar.Brand href="/">
           <Row>

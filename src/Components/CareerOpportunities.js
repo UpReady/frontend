@@ -13,7 +13,7 @@ function CareerOpportunities() {
     console.log(width);
   }, [width]);
   return (
-    <Container>
+    <Container fluid>
       {width >= 1024 && (
         <>
           <div className="header-career-opp text-center">

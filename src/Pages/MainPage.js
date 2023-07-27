@@ -13,10 +13,10 @@ function MainPage() {
       <HighLights />
       <CareerOpportunities />
       <Row>
-        <Col>
+        <Col lg={6} sm={12}>
           <BlogMain />
         </Col>
-        <Col>
+        <Col lg={6} sm={12}>
           <SSSMain />
         </Col>
       </Row>

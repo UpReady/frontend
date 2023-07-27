@@ -25,3 +25,19 @@ font-style: normal;
 font-weight: 400 !important;
 
 }
+.selected-tab{
+  color: #002177;
+  font-size: 22px;
+  font-family: Jost;
+  border-radius: 10px;
+  font-weight: 500;
+  background-color: #ecf0fd;
+}
+.nonselected-tab{
+  color: #002177;
+  font-size: 22px;
+  font-family: Jost;
+  border-radius: 10px;
+  font-weight: 500;
+  background-color: #ffffff;
+}

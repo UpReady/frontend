@@ -24,7 +24,7 @@ const HighLights = () => {
   return (
     <React.Fragment>
       <div className="bg-highlights pt-2 pb-4">
-        <Container>
+        <Container fluid>
           <div className="header-highlights pb-4 pt-4">
             Öne Çıkan Pozisyonlar
           </div>{" "}

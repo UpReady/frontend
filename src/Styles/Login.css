@@ -1,0 +1,45 @@
+.login-header {
+  color: #002177;
+  font-family: Jost;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.submit-btn {
+  border-radius: 10px;
+  background: #ecf0fd;
+  border-color: #ecf0fd;
+  color: #0c1b9b;
+  font-family: Jost;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.create-account {
+  border-bottom: none !important;
+  color: #002177 !important;
+  font-family: Jost;
+  font-size: 14px;
+}
+a{
+    text-decoration :none!important ;
+}
+.selected-login-tab{
+  color: #002177;
+  font-family: Jost;
+  font-size: 22px;
+  font-weight: 500;
+  background-color: #ecf0fd;
+  border-radius: 10px;
+}
+.nonselected-login-tab{
+   color: #6c82b9;
+  font-family: Jost;
+  font-size: 22px;
+  font-weight: 400;
+  background-color: #ffffff;
+  border: 1px solid #ecf0fd;
+  border-radius: 10px;
+}

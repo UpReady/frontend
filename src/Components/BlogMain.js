@@ -12,7 +12,7 @@ function BlogMain() {
     console.log(width);
   }, [width]);
   return (
-    <Container>
+    <Container fluid>
       {width >= 1024 && (
         <>
           <div className="blog-header text-center">BLOG ve HABERLER</div>

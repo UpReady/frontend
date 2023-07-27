@@ -6,7 +6,7 @@ import "../Styles/MainPage.css";
 
 function MainArea() {
   return (
-    <Container>
+    <Container fluid>
       <div className="line pb-lg-3">
         <Row>
           <Col lg={6} xs={12} sm={12}>
