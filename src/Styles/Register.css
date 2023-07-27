@@ -1,0 +1,27 @@
+.register-header {
+  color: #002177;
+  font-family: Jost;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.submit-btn {
+  border-radius: 10px;
+  background: #ecf0fd;
+  border-color: #ecf0fd;
+  color: #0C1B9B;
+font-family: Jost;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.form-label{
+    color: #000 !important;
+font-family: Jost !important;
+font-size: 18px !important;
+font-style: normal;
+font-weight: 400 !important;
+
+}

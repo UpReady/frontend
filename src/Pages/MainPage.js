@@ -9,15 +9,15 @@ import SSSMain from "../Components/SSSMain";
 function MainPage() {
   return (
     <React.Fragment>
-      <MainArea/>
-      <HighLights/>
-      <CareerOpportunities/>
+      <MainArea />
+      <HighLights />
+      <CareerOpportunities />
       <Row>
         <Col>
-        <BlogMain/>
-       </Col>
+          <BlogMain />
+        </Col>
         <Col>
-        <SSSMain/>
+          <SSSMain />
         </Col>
       </Row>
     </React.Fragment>
