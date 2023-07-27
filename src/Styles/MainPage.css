@@ -12,6 +12,7 @@
   background: #fff !important;
   box-shadow: 0px 4px 50px 4px rgba(36, 52, 192, 0.12) !important;
   border-color: #fff !important;
+  font-family: "Jost", sans-serif;
 }
 .header-highlights {
   color: #071bc8;
@@ -49,5 +50,42 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
+  line-height: normal;
+}
+.header-career-opp {
+  color: #394ae4;
+  font-family: Jost;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.header-career-opp-mobile {
+  color: #394ae4;
+  font-family: Jost;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.career-bg-img {
+  background-image: url("../img/Vector-3.svg");
+  background-repeat: no-repeat;
+  width: fit-content;
+}
+.blog-header {
+  color: #394ae4;
+  font-family: Jost;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.blog-header-mobile {
+  color: #394ae4;
+  font-family: Jost;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
   line-height: normal;
 }
