@@ -15,7 +15,7 @@ function MainPage() {
       <Row>
         <Col>
         <BlogMain/>
-        git push -f origin master</Col>
+       </Col>
         <Col>
         <SSSMain/>
         </Col>
