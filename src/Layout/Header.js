@@ -24,7 +24,7 @@ function Header() {
             <Nav.Link href="/calisan-bul">Çalışan Bul</Nav.Link>
             <Nav.Link href="/calisan-ol">Çalışan Ol</Nav.Link>
             <Nav.Link href="/sikca-sorulan-sorular">S.S.S.</Nav.Link>
-            <Nav.Link href="/blog">Blog</Nav.Link>
+            <Nav.Link href="/teknoloji">Blog</Nav.Link>
             <Nav.Link href="/giris-yap" className="mx-lg-5 px-lg-5">
               Giriş Yap
             </Nav.Link>

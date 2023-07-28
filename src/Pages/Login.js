@@ -71,7 +71,7 @@ const Login = () => {
               </Button>
             </Row>
           </Form>
-          <a href="/hesap-olustur">
+          <a href="/is-arayan-hesabi-olustur">
             <div className="create-account text-right">
               Hesabınız yok mu? <b> Hesap Oluştur </b>
             </div>
