@@ -11,10 +11,12 @@ function MainPage() {
     <React.Fragment>
       <MainArea />
       <HighLights />
-      <CareerOpportunities />
       <Row>
         <Col lg={6} sm={12}>
-          <BlogMain />
+          <a href="/teknoloji">
+            <BlogMain />
+          </a>
+          
         </Col>
         <Col lg={6} sm={12}>
           <SSSMain />

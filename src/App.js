@@ -10,23 +10,31 @@ import Footer from "./Layout/Footer";
 import BlogTechnology from "./Pages/BlogTechnology";
 import BlogEdu from "./Pages/BlogEdu";
 import BlogCompany from "./Pages/BlogCompany";
+import BlogDetails from "./Pages/BlogDetails";
 
 function App() {
   return (
     <React.Fragment>
-      <Header/>
+      <Header />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<MainPage />} />
-          <Route path="/isveren-hesabi-olustur" element={<RegisterEmployer />} />
-          <Route path="/is-arayan-hesabi-olustur" element={<RegisterJobSeeker />} />
+          <Route
+            path="/isveren-hesabi-olustur"
+            element={<RegisterEmployer />}
+          />
+          <Route
+            path="/is-arayan-hesabi-olustur"
+            element={<RegisterJobSeeker />}
+          />
           <Route path="/giris-yap" element={<Login />} />
           <Route path="/teknoloji" element={<BlogTechnology />} />
           <Route path="/egitim" element={<BlogEdu />} />
           <Route path="/firmalar" element={<BlogCompany />} />
+          <Route path="/haber-detay:id" element={<BlogDetails />} />
         </Routes>
       </BrowserRouter>
-      <Footer/>
+      <Footer />
     </React.Fragment>
   );
 }

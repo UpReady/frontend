@@ -72,18 +72,18 @@ const RegisterEmployer = () => {
   };
   return (
     <Container fluid>
-       <Image src={HeaderImg} width="100%" height="50" />
+       <Image src={HeaderImg} width="100%" height="30" />
       <div className="mt-5 mb-5 row justify-content-center">
         <Col lg={4} sm={12}>
           <Row>
-            <Col lg={6} sm={12}>
+            <Col lg={6} sm={6} xs={6}>
             <a href="/isveren-hesabi-olustur">
               <div className="selected-tab text-center pt-lg-3 pb-lg-3">
                 İşveren
               </div>
             </a>
             </Col>
-            <Col lg={6} sm={12}>
+            <Col lg={6} sm={6} xs={6}>
               <a href="/is-arayan-hesabi-olustur">
                 <div className="nonselected-tab text-center pt-lg-3 pb-lg-3">
                 İş Arayan

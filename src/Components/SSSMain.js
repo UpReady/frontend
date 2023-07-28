@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { Image } from "react-bootstrap";
 import Container from "react-bootstrap/esm/Container";
 import "../Styles/MainPage.css";
-import SSSImg from '../img/sss-main.jpg';
+import SSSImg from '../img/main-sss.png';
 function SSSMain() {
   const [width, setWidth] = useState("");
 
@@ -19,7 +19,7 @@ function SSSMain() {
             SIKÇA SORULAN SORULAR
           </div>
           <div className=" pt-3 pb-4 text-center">
-            <Image src={SSSImg} width="70%" />
+            <Image src={SSSImg} width="90%" />
           </div>
         </>
       )}

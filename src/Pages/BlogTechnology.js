@@ -13,9 +13,9 @@ import { Pagination } from "swiper/modules";
 function BlogTechnology() {
   return (
     <Container fluid>
-       <div className="blog-header text-center">BLOG ve HABERLER</div>
+      <div className="blog-header text-center">BLOG ve HABERLER</div>
       <Image src={HeaderImg} width="100%" height="50" />
-     
+
       <Row>
         <Col lg={4} sm={12}>
           <a href="/teknoloji">
@@ -52,59 +52,69 @@ function BlogTechnology() {
           className="mySwiper"
         >
           <SwiperSlide className="pt-5 pb-5">
-            <div className="card-blog pt-3 pb-3 px-2">
-              <Image className="mb-3" src={Blog5} width="100%" />
-              <div className="card-title px-2">Teknolojik Gelişmeler</div>
-              <div className="card-text px-2">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since...
+            <a href="/haber-detay:id">
+              <div className="card-blog pt-3 pb-3 px-2">
+                <Image className="mb-3" src={Blog5} width="100%" />
+                <div className="card-title px-2">Teknolojik Gelişmeler</div>
+                <div className="card-text px-2">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since...
+                </div>
               </div>
-            </div>
+            </a>
           </SwiperSlide>
           <SwiperSlide className="pt-5 pb-5">
-            <div className="card-blog pt-3 pb-3 px-2">
-              <Image className="mb-3" src={Blog5} width="100%" />
-              <div className="card-title px-2">Teknolojik Gelişmeler</div>
-              <div className="card-text px-2">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since...
-              </div>
-            </div>
+            <a href="/haber-detay:id">
+              <div className="card-blog pt-3 pb-3 px-2">
+                <Image className="mb-3" src={Blog5} width="100%" />
+                <div className="card-title px-2">Teknolojik Gelişmeler</div>
+                <div className="card-text px-2">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since...
+                </div>
+              </div>{" "}
+            </a>
           </SwiperSlide>
           <SwiperSlide className="pt-5 pb-5">
-            <div className="card-blog pt-3 pb-3 px-2">
-              <Image className="mb-3" src={Blog5} width="100%" />
-              <div className="card-title px-2">Teknolojik Gelişmeler</div>
-              <div className="card-text px-2">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since...
+            <a href="/haber-detay:id">
+              <div className="card-blog pt-3 pb-3 px-2">
+                <Image className="mb-3" src={Blog5} width="100%" />
+                <div className="card-title px-2">Teknolojik Gelişmeler</div>
+                <div className="card-text px-2">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since...
+                </div>
               </div>
-            </div>
+            </a>
           </SwiperSlide>
           <SwiperSlide className="pt-5 pb-5">
-            <div className="card-blog pt-3 pb-3 px-2">
-              <Image className="mb-3" src={Blog5} width="100%" />
-              <div className="card-title px-2">Teknolojik Gelişmeler</div>
-              <div className="card-text px-2">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since...
+            <a href="/haber-detay:id">
+              <div className="card-blog pt-3 pb-3 px-2">
+                <Image className="mb-3" src={Blog5} width="100%" />
+                <div className="card-title px-2">Teknolojik Gelişmeler</div>
+                <div className="card-text px-2">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since...
+                </div>
               </div>
-            </div>
+            </a>
           </SwiperSlide>
           <SwiperSlide className="pt-5 pb-5">
-            <div className="card-blog pt-3 pb-3 px-2">
-              <Image className="mb-3" src={Blog5} width="100%" />
-              <div className="card-title px-2">Teknolojik Gelişmeler</div>
-              <div className="card-text px-2">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since...
+            <a href="/haber-detay:id">
+              <div className="card-blog pt-3 pb-3 px-2">
+                <Image className="mb-3" src={Blog5} width="100%" />
+                <div className="card-title px-2">Teknolojik Gelişmeler</div>
+                <div className="card-text px-2">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since...
+                </div>
               </div>
-            </div>
+            </a>
           </SwiperSlide>
         </Swiper>
         {/* <Row>
