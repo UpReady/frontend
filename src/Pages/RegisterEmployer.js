@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { Container, Col, Row } from "react-bootstrap";
+import { Container, Col, Row,Image } from "react-bootstrap";
 import "../Styles/Register.css";
 
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import HeaderImg from "../img/header-img.png";
 // import axios from "axios";
 
 const RegisterEmployer = () => {
@@ -71,6 +72,7 @@ const RegisterEmployer = () => {
   };
   return (
     <Container fluid>
+       <Image src={HeaderImg} width="100%" height="50" />
       <div className="mt-5 mb-5 row justify-content-center">
         <Col lg={4} sm={12}>
           <Row>
@@ -93,9 +95,9 @@ const RegisterEmployer = () => {
         </Col>
       </div>
 
-      <div className="register-header text-center mt-4 mb-4">
+      {/* <div className="register-header text-center mt-4 mb-4">
         İŞVEREN HESABI OLUŞTUR
-      </div>
+      </div> */}
       <div className="justify-content-center row">
         <Col lg={4} sm={12}>
           <Form noValidate validated={validated} onSubmit={handleSubmit}>

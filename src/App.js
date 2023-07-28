@@ -7,7 +7,9 @@ import Login from "./Pages/Login";
 import RegisterEmployer from "./Pages/RegisterEmployer";
 import RegisterJobSeeker from "./Pages/RegisterJobSeeker";
 import Footer from "./Layout/Footer";
-import Blog from "./Pages/Blog";
+import BlogTechnology from "./Pages/BlogTechnology";
+import BlogEdu from "./Pages/BlogEdu";
+import BlogCompany from "./Pages/BlogCompany";
 
 function App() {
   return (
@@ -19,7 +21,9 @@ function App() {
           <Route path="/isveren-hesabi-olustur" element={<RegisterEmployer />} />
           <Route path="/is-arayan-hesabi-olustur" element={<RegisterJobSeeker />} />
           <Route path="/giris-yap" element={<Login />} />
-          <Route path="/blog" element={<Blog />} />
+          <Route path="/teknoloji" element={<BlogTechnology />} />
+          <Route path="/egitim" element={<BlogEdu />} />
+          <Route path="/firmalar" element={<BlogCompany />} />
         </Routes>
       </BrowserRouter>
       <Footer/>

@@ -17,6 +17,17 @@ font-style: normal;
 font-weight: 500;
 line-height: normal;
 }
+.submit-btn:hover{
+  border-radius: 10px;
+  background: #b3c1f0;
+  border-color: #ecf0fd;
+  color: #0C1B9B;
+font-family: Jost;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
 .form-label{
     color: #000 !important;
 font-family: Jost !important;
@@ -40,4 +51,12 @@ font-weight: 400 !important;
   border-radius: 10px;
   font-weight: 500;
   background-color: #ffffff;
+}
+.nonselected-tab:hover{
+  color: #002177;
+  font-size: 22px;
+  font-family: Jost;
+  border-radius: 10px;
+  font-weight: 500;
+  background-color: #f5f7ff;
 }

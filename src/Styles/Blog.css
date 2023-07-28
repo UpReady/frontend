@@ -1,37 +1,61 @@
-.blog-header{
-    color: #0C1B9B;
-font-family: Jost;
-font-size: 22px;
-font-style: normal;
-font-weight: 500;
+.blog-header {
+  color: #0c1b9b;
+  font-family: Jost;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
 }
-.card-blog{
-    border-radius: 10px;
-background: #FFF;
-box-shadow: 0px 4px 4px 0px #D4E0FF;
+.card-blog {
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px #d4e0ff;
 }
-.card-title{
-    color: #0C1B9B;
-    font-family: Jost;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
+.card-title {
+  color: #0c1b9b;
+  font-family: Jost;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
 }
-.card-text{
-    color: #0b0f2f;
-    font-family: Jost;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
+.card-text {
+  color: #0b0f2f;
+  font-family: Jost;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
 }
 .card-blog:hover {
-    /* background-color: #dfecf9; */
-    background-color: white;
-    box-shadow: 0px 4px 100px 0px #B0C4F9;
+  /* background-color: #dfecf9; */
+  background-color: white;
+  box-shadow: 0px 4px 100px 0px #b0c4f9;
+  border-radius: 10px;
+  transition-duration: 1s;
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  z-index: 4;
+}
+.selected-blog-tab{
+    color: #002177;
+    font-size: 22px;
+    font-family: Jost;
     border-radius: 10px;
-    transition-duration: 1s;
-    -ms-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-    z-index: 4;
+    font-weight: 500;
+    background-color: #ecf0fd;
+  }
+  .nonselected-blog-tab{
+    color: #002177;
+    font-size: 22px;
+    font-family: Jost;
+    border-radius: 10px;
+    font-weight: 500;
+    background-color: #ffffff;
+  }
+  .nonselected-blog-tab:hover{
+    color: #002177;
+    font-size: 22px;
+    font-family: Jost;
+    border-radius: 10px;
+    font-weight: 500;
+    background-color: #f5f7ff;
   }

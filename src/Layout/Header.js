@@ -10,7 +10,7 @@ function Header() {
         <Navbar.Brand href="/">
           <Row>
             <Col>
-              <Image src={Logo} />
+              <Image src={Logo} width="100%"/>
             </Col>
             <Col>
               <div className="mt-lg-2">UpReady</div>
