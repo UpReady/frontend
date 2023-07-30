@@ -78,3 +78,21 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
   }
+  .blog-details-date-title{
+    font-size: 12px;
+    color: #60687e;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    font-weight: 500;
+    font-family: Jost;
+  }
+  .blog-details-date{
+    font-size: 12px;
+    color: #1f232c;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    font-weight: 400;
+    font-family: Jost;
+  }
