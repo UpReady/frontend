@@ -28,8 +28,8 @@ function Header() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link className="mx-lg-5" href="/hakkimizda">
-              Hakkımızda
+            <Nav.Link className="mx-lg-5" href="/vizyonumuz">
+              Vizyonumuz
             </Nav.Link>
             <Nav.Link className="mx-lg-5" href="/calisan-bul">
               Çalışan Bul
