@@ -14,7 +14,7 @@ function BlogEdu() {
   return (
     <Container fluid>
       <div className="blog-header text-center">BLOG ve HABERLER</div>
-      <Image src={HeaderImg} width="100%" height="50" />
+      <Image src={HeaderImg} width="100%" height="30" />
       <Row>
         <Col lg={4} sm={12}>
           <a href="/teknoloji">

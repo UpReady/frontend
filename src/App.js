@@ -11,6 +11,8 @@ import BlogTechnology from "./Pages/BlogTechnology";
 import BlogEdu from "./Pages/BlogEdu";
 import BlogCompany from "./Pages/BlogCompany";
 import BlogDetails from "./Pages/BlogDetails";
+import UserProfile from "./Pages/UserProfile";
+import SSS from "./Pages/SSS";
 
 function App() {
   return (
@@ -32,6 +34,8 @@ function App() {
           <Route path="/egitim" element={<BlogEdu />} />
           <Route path="/firmalar" element={<BlogCompany />} />
           <Route path="/haber-detay:id" element={<BlogDetails />} />
+          <Route path="/kullanici-profili" element={<UserProfile />} />
+          <Route path="/sss" element={<SSS />} />
         </Routes>
       </BrowserRouter>
       <Footer />

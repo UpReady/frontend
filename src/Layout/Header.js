@@ -37,12 +37,17 @@ function Header() {
             <Nav.Link className="mx-lg-5" href="/calisan-ol">
               Çalışan Ol
             </Nav.Link>
-            <Nav.Link className="mx-lg-5" href="/sikca-sorulan-sorular">
+            <Nav.Link className="mx-lg-5" href="/sss">
               S.S.S.
             </Nav.Link>
             <Nav.Link className="mx-lg-5" href="/teknoloji">
               Blog
             </Nav.Link>
+            {/* Eğer kullanıcı giriş yaptıyse giriş/hesap oluştur yerine profil sayfasını görecek */}
+            {/* <Nav.Link className="mx-lg-5" href="/teknoloji">
+              Hoş geldin <b> Aysel </b>
+              <Image className="header-profile-pic" src={Logo} />
+            </Nav.Link> */}
             <NavDropdown
               className="mx-lg-5"
               title="Giriş Yap / Hesap Oluştur"
