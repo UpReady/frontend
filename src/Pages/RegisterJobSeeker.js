@@ -13,6 +13,7 @@ const RegisterJobSeeker = () => {
   const [password, setPassword] = useState("");
   const [kvkk, setKvkk] = useState("");
   const [validated, setValidated] = useState(false);
+  const apiURL = "http://localhost:3001";
 
   const handleChangeLastName = (e) => {
     setLastName(e.target.value);
@@ -50,12 +51,21 @@ const RegisterJobSeeker = () => {
       "Kvkk Durumu:",
       kvkk
     );
+    fetch(`${apiURL}/auth/register`, {
+      method: "POST",
+      body: JSON.stringify({ firstName, lastName, email, password }),
+      headers: { "Content-Type": "application/json" },
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        localStorage.setItem("sessionToken", data.token);
+      });
   };
   return (
     <Container fluid>
        <Image src={HeaderImg} width="100%" height="30" />
         <div className="mt-5 mb-5 row justify-content-center">
-        <Col lg={4} sm={12}>
+        {/* <Col lg={4} sm={12}>
           <Row>
             <Col lg={6} sm={6} xs={6}>
             <a href="/isveren-hesabi-olustur">
@@ -72,7 +82,7 @@ const RegisterJobSeeker = () => {
               </a>
             </Col>
           </Row>
-        </Col>
+        </Col> */}
       </div>
       {/* <div className="register-header text-center mt-4 mb-4">İŞ ARAYAN HESABI OLUŞTUR</div> */}
       <div className="justify-content-center row">

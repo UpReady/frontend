@@ -7,9 +7,11 @@ import {
   Col,
   Image,
   NavDropdown,
+  NavItem,
 } from "react-bootstrap";
 import "../Styles/Header.css";
 import Logo from "../img/header-logo.svg";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -28,36 +30,46 @@ function Header() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link className="mx-lg-5" href="/vizyonumuz">
-              Vizyonumuz
-            </Nav.Link>
-            <Nav.Link className="mx-lg-5" href="/calisan-bul">
-              Çalışan Bul
-            </Nav.Link>
-            <Nav.Link className="mx-lg-5" href="/calisan-ol">
-              Çalışan Ol
-            </Nav.Link>
-            <Nav.Link className="mx-lg-5" href="/sss">
-              S.S.S.
-            </Nav.Link>
-            <Nav.Link className="mx-lg-5" href="/teknoloji">
-              Blog
-            </Nav.Link>
-            {/* Eğer kullanıcı giriş yaptıyse giriş/hesap oluştur yerine profil sayfasını görecek */}
-            {/* <Nav.Link className="mx-lg-5" href="/teknoloji">
-              Hoş geldin <b> Aysel </b>
-              <Image className="header-profile-pic" src={Logo} />
-            </Nav.Link> */}
-            <NavDropdown
-              className="mx-lg-5"
+            <Link to="/vizyonumuz">
+              <NavItem>
+                <div className="header-tab mx-lg-5 px-lg-3 mt-lg-3 mb-lg-3">Vizyonumuz</div>
+              </NavItem>
+            </Link>
+            <Link to="/calisan-bul">
+              <NavItem>
+                <div className="header-tab mx-lg-5 px-lg-3 mt-lg-3 mb-lg-3">Çalışan Bul</div>
+              </NavItem>
+            </Link>
+            <Link to="/calisan-ol">
+              <NavItem>
+                <div className="header-tab mx-lg-5 px-lg-3 mt-lg-3 mb-lg-3">Çalışan Ol</div>
+              </NavItem>
+            </Link>
+            <Link to="/sss">
+              <NavItem>
+                <div className="header-tab mx-lg-5 px-lg-3 mt-lg-3 mb-lg-3">SSS</div>
+              </NavItem>
+            </Link>
+            <Link to="/teknoloji">
+              <NavItem>
+                <div className="header-tab mx-lg-5 px-lg-3 mt-lg-3 mb-lg-3">Blog</div>
+              </NavItem>
+            </Link>
+            <Link to="/giris-yap">
+              <NavItem>
+                <div className="header-tab mx-lg-5 px-lg-3 mt-lg-3 mb-lg-3">Giriş Yap</div>
+              </NavItem>
+            </Link>
+            {/* <NavDropdown
+              className="mx-lg-5 mt-2"
               title="Giriş Yap / Hesap Oluştur"
               id="basic-nav-dropdown"
             >
-              <NavDropdown.Item href="giris-yap">Giriş Yap</NavDropdown.Item>
+              <NavDropdown.Item href="giris-yap"> Giriş Yap</NavDropdown.Item>
               <NavDropdown.Item href="is-arayan-hesabi-olustur">
                 Hesap Oluştur
               </NavDropdown.Item>
-            </NavDropdown>
+            </NavDropdown> */}
           </Nav>
         </Navbar.Collapse>
       </Navbar>

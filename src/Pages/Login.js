@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container, Image, Col, Row } from "react-bootstrap";
 import "../Styles/Login.css";
-import HeaderImg from '../img/header-img.png';
+import HeaderImg from "../img/header-img.png";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 // import axios from "axios";
@@ -10,6 +10,7 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [validated, setValidated] = useState(false);
+  const apiURL = "http://localhost:3001";
 
   const handleChangeEmail = (e) => {
     setEmail(e.target.value);
@@ -27,10 +28,20 @@ const Login = () => {
     setValidated(true);
     e.preventDefault();
     console.log("Email:", email, "Şifre:", password);
+
+    fetch(`${apiURL}/auth/login`, {
+      method: "POST",
+      body: JSON.stringify({ email, password }),
+      headers: { "Content-Type": "application/json" },
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        localStorage.setItem("sessionToken", data.token);
+      });
   };
   return (
-    <Container  fluid>
-      <Image src={HeaderImg} width="100%" height="50"/>
+    <Container fluid>
+      <Image src={HeaderImg} width="100%" height="50" />
       {/* <div className="login-header text-center mt-4 mb-4">GİRİŞ YAP</div> */}
       <div className="justify-content-center row mt-5">
         <Col lg={4} sm={12}>

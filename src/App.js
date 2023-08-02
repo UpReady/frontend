@@ -16,10 +16,11 @@ import SSS from "./Pages/SSS";
 import AboutUs from "./Pages/AboutUs";
 
 function App() {
+  
   return (
     <React.Fragment>
-      <Header />
       <BrowserRouter>
+      <Header/>
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route
