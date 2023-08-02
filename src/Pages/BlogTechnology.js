@@ -9,6 +9,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
+import { Link } from "react-router-dom";
 
 function BlogTechnology() {
   return (
@@ -52,7 +53,7 @@ function BlogTechnology() {
           className="mySwiper"
         >
           <SwiperSlide className="pt-5 pb-5">
-            <a href="/haber-detay:id">
+            <Link to="/haber-detay:id">
               <div className="card-blog pt-3 pb-3 px-2">
                 <Image className="mb-3" src={Blog5} width="100%" />
                 <div className="card-title px-2">Teknolojik Gelişmeler</div>
@@ -62,10 +63,10 @@ function BlogTechnology() {
                   standard dummy text ever since...
                 </div>
               </div>
-            </a>
+            </Link>
           </SwiperSlide>
           <SwiperSlide className="pt-5 pb-5">
-            <a href="/haber-detay:id">
+            <Link to="/haber-detay:id">
               <div className="card-blog pt-3 pb-3 px-2">
                 <Image className="mb-3" src={Blog5} width="100%" />
                 <div className="card-title px-2">Teknolojik Gelişmeler</div>
@@ -75,10 +76,10 @@ function BlogTechnology() {
                   standard dummy text ever since...
                 </div>
               </div>{" "}
-            </a>
+            </Link>
           </SwiperSlide>
           <SwiperSlide className="pt-5 pb-5">
-            <a href="/haber-detay:id">
+            <Link to="/haber-detay:id">
               <div className="card-blog pt-3 pb-3 px-2">
                 <Image className="mb-3" src={Blog5} width="100%" />
                 <div className="card-title px-2">Teknolojik Gelişmeler</div>
@@ -88,10 +89,10 @@ function BlogTechnology() {
                   standard dummy text ever since...
                 </div>
               </div>
-            </a>
+            </Link>
           </SwiperSlide>
           <SwiperSlide className="pt-5 pb-5">
-            <a href="/haber-detay:id">
+            <Link to="/haber-detay:id">
               <div className="card-blog pt-3 pb-3 px-2">
                 <Image className="mb-3" src={Blog5} width="100%" />
                 <div className="card-title px-2">Teknolojik Gelişmeler</div>
@@ -101,10 +102,10 @@ function BlogTechnology() {
                   standard dummy text ever since...
                 </div>
               </div>
-            </a>
+            </Link>
           </SwiperSlide>
           <SwiperSlide className="pt-5 pb-5">
-            <a href="/haber-detay:id">
+            <Link to="/haber-detay:id">
               <div className="card-blog pt-3 pb-3 px-2">
                 <Image className="mb-3" src={Blog5} width="100%" />
                 <div className="card-title px-2">Teknolojik Gelişmeler</div>
@@ -114,7 +115,7 @@ function BlogTechnology() {
                   standard dummy text ever since...
                 </div>
               </div>
-            </a>
+            </Link>
           </SwiperSlide>
         </Swiper>
         {/* <Row>

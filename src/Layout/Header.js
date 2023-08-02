@@ -6,7 +6,6 @@ import {
   Row,
   Col,
   Image,
-  NavDropdown,
   NavItem,
 } from "react-bootstrap";
 import "../Styles/Header.css";

@@ -1,13 +1,13 @@
 import React from "react";
 import { Container, Row, Col, Image, Form, Button } from "react-bootstrap";
 import MainText from "../img/mp-text.svg";
-import MainImg from "../img/mp-img.svg";
+import MainImg from "../img/mp-img.png";
 import "../Styles/MainPage.css";
 
 function MainArea() {
   return (
-    <Container fluid>
-      <div className="line pb-lg-3">
+    <Container>
+      <div className="line pb-lg-3 p-0">
         <Row>
           <Col lg={6} xs={12} sm={12}>
             <div>
