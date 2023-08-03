@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Image, Col, Row } from "react-bootstrap";
 import "../Styles/Login.css";
 import HeaderImg from "../img/header-img.png";
@@ -10,6 +10,7 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [validated, setValidated] = useState(false);
+  const [status, setStatus] = useState("");
   const apiURL = "http://localhost:3001";
 
   const handleChangeEmail = (e) => {
@@ -32,17 +33,34 @@ const Login = () => {
     fetch(`${apiURL}/auth/login`, {
       method: "POST",
       body: JSON.stringify({ email, password }),
+      credentials: "include",
       headers: { "Content-Type": "application/json" },
     })
       .then((response) => response.json())
       .then((data) => {
         localStorage.setItem("sessionToken", data.token);
+        console.log("Giriş başarılı:", data);
+        //successinde request atıp isLogin kontrolü yapsın
+        fetch(`${apiURL}/auth/isLogin`, {
+          method: "GET",
+          credentials: "include",
+        })
+          .then((response) => response.json())
+          .then((dataisLogin) => {
+            console.log("get -> isLogin durumu :", dataisLogin);
+          })
+          .catch((error) => {
+            console.error("Hata:", error);
+          });
+      })
+      .catch((error) => {
+        console.error("Hata:", error);
       });
   };
+
   return (
     <Container fluid>
       <Image src={HeaderImg} width="100%" height="50" />
-      {/* <div className="login-header text-center mt-4 mb-4">GİRİŞ YAP</div> */}
       <div className="justify-content-center row mt-5">
         <Col lg={4} sm={12}>
           <Form noValidate validated={validated} onSubmit={handleSubmit}>

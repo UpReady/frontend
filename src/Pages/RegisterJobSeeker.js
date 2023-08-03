@@ -59,6 +59,8 @@ const RegisterJobSeeker = () => {
       .then((response) => response.json())
       .then((data) => {
         localStorage.setItem("sessionToken", data.token);
+      }).catch(error => {
+        console.error('Hata:', error);
       });
   };
   return (
