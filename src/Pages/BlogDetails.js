@@ -1,7 +1,6 @@
 import React, { useState, useRef } from "react";
 import { Col, Container, Row, Image } from "react-bootstrap";
 import Blog5 from "../img/news3.jpg";
-import HeaderImg from "../img/header-img.png";
 import "../Styles/Blog.css";
 import Facebook from '../img/facebook.svg';
 import Linkedin from '../img/linkedin.svg';
@@ -11,7 +10,6 @@ function BlogDetails() {
   return (
     <Container fluid>
       <div className="blog-header text-center">DERİN ÖĞRENME PROBLEMLERİ</div>
-      <Image src={HeaderImg} width="100%" height="30" />
       <div className="details-container mt-5 mb-5">
         <Row>
           <Col lg={6} xs={12} sm={12}>

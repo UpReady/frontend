@@ -10,28 +10,27 @@
 .form-control {
   border-radius: 5px !important;
   background: #fff !important;
-  box-shadow: 0px 4px 50px 4px rgba(36, 52, 192, 0.12) !important;
   border-color: #fff !important;
-  font-family: "Jost", sans-serif;
+  font-family: "Cardo", serif !important;
+  border-color: #e1e5ef !important;
 }
 .header-highlights {
-  color: #071bc8;
-  font-family: "Jost", sans-serif;
-  font-size: 24px;
+  color: #202122;
+  font-family: Cardo;
+  font-size: 32px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: normal;
 }
 .card {
   border-radius: 10px;
   border-color: #fff;
-  background: linear-gradient(180deg, #e7ecf8 0%, rgba(231, 236, 248, 0) 100%);
-  box-shadow: 0px 4px 50px 3px rgba(228, 228, 228, 0.25);
+  border: 1px solid #d2d8ea;
 }
 .job-style {
-  color: #0c1b9b;
-  font-family: "Jost", sans-serif;
-  font-size: 18px;
+  color: #52575c;
+  font-family: Jost;
+  font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -88,4 +87,50 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+.main-first-text {
+  color: #0c1b9b;
+  font-weight: 600;
+  font-family: Cardo;
+  font-size: 72px;
+}
+.job-location {
+  color: #a9a9a9;
+  font-family: Jost;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.job-title {
+  color: #52575c;
+  font-family: Jost;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.sss-main-header {
+  color: #52575c;
+  font-family: Cardo;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.main-sss-p{
+  color: #52575C;
+font-family: Cardo;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 29px; /* 145% */
+}
+.roadmap-title{
+  color: #52575C;
+font-family: Cardo;
+font-size: 48px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 }

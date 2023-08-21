@@ -19,15 +19,14 @@
   font-size: 16px !important;
   font-weight: 400 !important;
 }
-.header-profile-pic{
-  border-radius:.25rem!important ;
-  
+.header-profile-pic {
+  border-radius: 0.25rem !important ;
 }
-.header-tab{
-  color: #0c1b9b;
-  font-family: "Jost", sans-serif !important;
-  font-size: 16px !important;
-  font-weight: 400 !important;
-
-
+.header-tab {
+  color: black !important;
+  font-family: "Cardo", serif !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  align-items: center;
+  align-self: center;
 }

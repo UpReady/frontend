@@ -3,6 +3,7 @@ import { Row, Col } from "react-bootstrap";
 import BlogMain from "../Components/BlogMain";
 import HighLights from "../Components/HighLights";
 import MainArea from "../Components/MainArea";
+import RoadMapMain from "../Components/RoadMapMain";
 import SSSMain from "../Components/SSSMain";
 
 function MainPage() {
@@ -20,6 +21,7 @@ function MainPage() {
           <SSSMain />
         </Col>
       </Row>
+      <RoadMapMain/>
     </React.Fragment>
   );
 }

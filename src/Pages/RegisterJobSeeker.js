@@ -3,7 +3,6 @@ import { Container, Col, Row, Image } from "react-bootstrap";
 import "../Styles/Register.css";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-import HeaderImg from "../img/header-img.png";
 // import axios from "axios";
 
 const RegisterJobSeeker = () => {
@@ -65,7 +64,6 @@ const RegisterJobSeeker = () => {
   };
   return (
     <Container fluid>
-       <Image src={HeaderImg} width="100%" height="30" />
         <div className="mt-5 mb-5 row justify-content-center">
         {/* <Col lg={4} sm={12}>
           <Row>

@@ -1,33 +1,33 @@
 .blog-header {
-  color: #0c1b9b;
-  font-family: Jost;
-  font-size: 22px;
+  color: black;
+  font-family: "Cardo", serif;
+  font-size: 28px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
 }
 .card-blog {
   border-radius: 10px;
   background: #fff;
-  box-shadow: 0px 4px 4px 0px #d4e0ff;
+  box-shadow: 0px 4px 4px 0px #f1f3f7;
 }
 .card-title {
-  color: #0c1b9b;
-  font-family: Jost;
-  font-size: 16px;
+  color: black;
+  font-family: Cardo;
+  font-size: 20px;
   font-style: normal;
   font-weight: 600;
 }
 .card-text {
   color: #0b0f2f;
-  font-family: Jost;
-  font-size: 14px;
+  font-family: Cardo;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
 }
 .card-blog:hover {
   /* background-color: #dfecf9; */
   background-color: white;
-  box-shadow: 0px 4px 100px 0px #b0c4f9;
+  /* box-shadow: 0px 4px 100px 0px #b0c4f9; */
   border-radius: 10px;
   transition-duration: 1s;
   -ms-transform: scale(1.1);
@@ -35,64 +35,64 @@
   transform: scale(1.1);
   z-index: 10;
 }
-.selected-blog-tab{
-    color: #002177;
-    font-size: 22px;
-    font-family: Jost;
-    border-radius: 10px;
-    font-weight: 500;
-    background-color: #ecf0fd;
-  }
-  .nonselected-blog-tab{
-    color: #002177;
-    font-size: 22px;
-    font-family: Jost;
-    border-radius: 10px;
-    font-weight: 500;
-    background-color: #ffffff;
-  }
-  .nonselected-blog-tab:hover{
-    color: #002177;
-    font-size: 22px;
-    font-family: Jost;
-    border-radius: 10px;
-    font-weight: 500;
-    background-color: #f5f7ff;
-  }
-  .swiper{
-    width: auto!important;
-  }
-  .blog-details-title{
-    color: #0C1B9B;
-font-family: Jost;
-font-size: 24px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-  }
-  .blog-details-text{
-    color: rgb(48, 48, 51);
-font-family: Jost;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-  }
-  .blog-details-date-title{
-    font-size: 12px;
-    color: #60687e;
-    align-items: center;
-    align-content: center;
-    align-self: center;
-    font-weight: 500;
-    font-family: Jost;
-  }
-  .blog-details-date{
-    font-size: 12px;
-    color: #1f232c;
-    align-items: center;
-    align-content: center;
-    align-self: center;
-    font-weight: 400;
-    font-family: Jost;
-  }
+.selected-blog-tab {
+  color: black;
+  font-size: 22px;
+  font-family: Cardo;
+  font-weight: 600;
+  background-color: #ffffff;
+  border-bottom: #002177 1px solid;
+}
+.nonselected-blog-tab {
+  color: black;
+  font-size: 22px;
+  font-family: Cardo;
+  font-weight: 500;
+  background-color: #ffffff;
+}
+.nonselected-blog-tab:hover {
+  color: black;
+  font-size: 22px;
+  font-family: Cardo;
+  font-weight: 600;
+  background-color: #ffffff;
+  border-bottom: #0b0f2f 1px solid;
+
+}
+.swiper {
+  width: auto !important;
+}
+.blog-details-title {
+  color: #0c1b9b;
+  font-family: Jost;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.blog-details-text {
+  color: rgb(48, 48, 51);
+  font-family: Jost;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.blog-details-date-title {
+  font-size: 12px;
+  color: #60687e;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  font-weight: 500;
+  font-family: Jost;
+}
+.blog-details-date {
+  font-size: 12px;
+  color: #1f232c;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  font-weight: 400;
+  font-family: Jost;
+}

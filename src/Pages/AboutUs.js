@@ -7,8 +7,7 @@ import VisionImg from '../img/image-vision.jpg';
 function AboutUs() {
   return (
     <Container fluid>
-      <div className="blog-header text-center">VİZYONUMUZ</div>
-      <Image src={HeaderImg} width="100%" height="30" />
+      <div className="blog-header mt-lg-3 mb-lg-3 text-center">VİZYONUMUZ</div>
       <div className="vision-text-container mt-4 mx-4">
         <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

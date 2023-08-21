@@ -3,7 +3,6 @@ import { Col, Container, Row, Image } from "react-bootstrap";
 import Blog3 from "../img/news1.jpg";
 import Blog4 from "../img/news2.jpg";
 import Blog5 from "../img/news3.jpg";
-import HeaderImg from "../img/header-img.png";
 import "../Styles/Blog.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -13,8 +12,9 @@ import { Pagination } from "swiper/modules";
 function BlogEdu() {
   return (
     <Container fluid>
-      <div className="blog-header text-center">BLOG ve HABERLER</div>
-      <Image src={HeaderImg} width="100%" height="30" />
+            <div className="blog-header mt-lg-3 mb-lg-3 text-center">
+        BLOG ve HABERLER
+      </div>
       <Row>
         <Col lg={4} sm={12}>
           <a href="/teknoloji">

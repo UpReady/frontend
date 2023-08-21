@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Container, Image, Col, Row } from "react-bootstrap";
 import "../Styles/Login.css";
-import HeaderImg from "../img/header-img.png";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 // import axios from "axios";
@@ -60,7 +59,6 @@ const Login = () => {
 
   return (
     <Container fluid>
-      <Image src={HeaderImg} width="100%" height="50" />
       <div className="justify-content-center row mt-5">
         <Col lg={4} sm={12}>
           <Form noValidate validated={validated} onSubmit={handleSubmit}>

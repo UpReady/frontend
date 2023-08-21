@@ -1,11 +1,13 @@
 import React from 'react'
 import { Container, Image } from 'react-bootstrap';
-import FooterImg from '../img/footer-img.png';
+import '../Styles/Footer.css';
 
 function Footer() {
   return (
     <Container fluid>
-        <Image src={FooterImg} width="100%"/>
+       <div className="footer-bg">
+        FOOTER
+       </div>
     </Container>
   )
 }

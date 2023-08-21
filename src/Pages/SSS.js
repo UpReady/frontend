@@ -5,8 +5,7 @@ import '../Styles/SSS.css';
 function SSS() {
   return (
     <Container fluid>
-        <div className="blog-header text-center">SIKÇA SORULAN SORULAR</div>
-      <Image src={HeaderImg} width="100%" height="30" />
+        <div className="blog-header text-center mt-lg-4 mb-lg-4">SIKÇA SORULAN SORULAR</div>
       <div className="accordion-container mt-4 mb-4">
       <Accordion>
       <Accordion.Item eventKey="0">
