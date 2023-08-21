@@ -8,7 +8,8 @@ import Image from "react-bootstrap/esm/Image";
 import CardImg from "../img/ericsson-logo-1.svg";
 import LocationIcon from "../Icons/LocationIcon";
 
-const HighLights = () => {
+
+const JobsForYou = () => {
   const [index, setIndex] = useState(0);
 
   const handleSelect = (selectedIndex) => {
@@ -26,177 +27,9 @@ const HighLights = () => {
     <React.Fragment>
       <div className="bg-highlights pt-2 pb-4">
         <Container fluid>
-          <div className="header-highlights pb-4 pt-4">Öne Çıkan İlanlar</div>{" "}
+          {/* <div className="header-highlights pb-4 pt-4">Öne Çıkan İlanlar</div>{" "} */}
           {width >= 1024 && (
             <Carousel activeIndex={index} onSelect={handleSelect}>
-              <Carousel.Item>
-                <Row>
-                  <Col>
-                    <div className="card px-lg-2 pt-lg-2">
-                      <Row>
-                        <Col lg={4}>
-                          <Image className="p-2" src={CardImg} />
-                        </Col>
-                        <Col lg={8}>
-                          <div className="job-style mt-md-n3">Ericsson</div>
-
-                          <div className="job-location">
-                            {" "}
-                            <LocationIcon /> İstanbul
-                          </div>
-                          <div className="job-title pt-lg-4 pb-lg-4">
-                            Backend Developer
-                          </div>
-                        </Col>
-                      </Row>
-                    </div>
-                  </Col>
-                  <Col>
-                    <div className="card px-lg-2 pt-lg-2">
-                      <Row>
-                        <Col lg={4}>
-                          <Image className="p-2" src={CardImg} />
-                        </Col>
-                        <Col lg={8}>
-                          <div className="job-style mt-md-n3">Ericsson</div>
-
-                          <div className="job-location">
-                            {" "}
-                            <LocationIcon /> İstanbul
-                          </div>
-                          <div className="job-title pt-lg-4 pb-lg-4">
-                            Backend Developer
-                          </div>
-                        </Col>
-                      </Row>
-                    </div>
-                  </Col>
-                  <Col>
-                    <div className="card px-lg-2 pt-lg-2">
-                      <Row>
-                        <Col lg={4}>
-                          <Image className="p-2" src={CardImg} />
-                        </Col>
-                        <Col lg={8}>
-                          <div className="job-style mt-md-n3">Ericsson</div>
-
-                          <div className="job-location">
-                            {" "}
-                            <LocationIcon /> İstanbul
-                          </div>
-                          <div className="job-title pt-lg-4 pb-lg-4">
-                            Backend Developer
-                          </div>
-                        </Col>
-                      </Row>
-                    </div>
-                  </Col>
-                  <Col>
-                    <div className="card px-lg-2 pt-lg-2">
-                      <Row>
-                        <Col lg={4}>
-                          <Image className="p-2" src={CardImg} />
-                        </Col>
-                        <Col lg={8}>
-                          <div className="job-style mt-md-n3">Ericsson</div>
-
-                          <div className="job-location">
-                            {" "}
-                            <LocationIcon /> İstanbul
-                          </div>
-                          <div className="job-title pt-lg-4 pb-lg-4">
-                            Backend Developer
-                          </div>
-                        </Col>
-                      </Row>
-                    </div>
-                  </Col>
-                </Row>
-              </Carousel.Item>
-              <Carousel.Item>
-                <Row>
-                  <Col>
-                    <div className="card px-lg-2 pt-lg-2">
-                      <Row>
-                        <Col lg={4}>
-                          <Image className="p-2" src={CardImg} />
-                        </Col>
-                        <Col lg={8}>
-                          <div className="job-style mt-md-n3">Ericsson</div>
-
-                          <div className="job-location">
-                            {" "}
-                            <LocationIcon /> İstanbul
-                          </div>
-                          <div className="job-title pt-lg-4 pb-lg-4">
-                            Backend Developer
-                          </div>
-                        </Col>
-                      </Row>
-                    </div>
-                  </Col>
-                  <Col>
-                    <div className="card px-lg-2 pt-lg-2">
-                      <Row>
-                        <Col lg={4}>
-                          <Image className="p-2" src={CardImg} />
-                        </Col>
-                        <Col lg={8}>
-                          <div className="job-style mt-md-n3">Ericsson</div>
-
-                          <div className="job-location">
-                            {" "}
-                            <LocationIcon /> İstanbul
-                          </div>
-                          <div className="job-title pt-lg-4 pb-lg-4">
-                            Backend Developer
-                          </div>
-                        </Col>
-                      </Row>
-                    </div>
-                  </Col>
-                  <Col>
-                    <div className="card px-lg-2 pt-lg-2">
-                      <Row>
-                        <Col lg={4}>
-                          <Image className="p-2" src={CardImg} />
-                        </Col>
-                        <Col lg={8}>
-                          <div className="job-style mt-md-n3">Ericsson</div>
-
-                          <div className="job-location">
-                            {" "}
-                            <LocationIcon /> İstanbul
-                          </div>
-                          <div className="job-title pt-lg-4 pb-lg-4">
-                            Backend Developer
-                          </div>
-                        </Col>
-                      </Row>
-                    </div>
-                  </Col>
-                  <Col>
-                    <div className="card px-lg-2 pt-lg-2">
-                      <Row>
-                        <Col lg={4}>
-                          <Image className="p-2" src={CardImg} />
-                        </Col>
-                        <Col lg={8}>
-                          <div className="job-style mt-md-n3">Ericsson</div>
-
-                          <div className="job-location">
-                            {" "}
-                            <LocationIcon /> İstanbul
-                          </div>
-                          <div className="job-title pt-lg-4 pb-lg-4">
-                            Backend Developer
-                          </div>
-                        </Col>
-                      </Row>
-                    </div>
-                  </Col>
-                </Row>
-              </Carousel.Item>
               <Carousel.Item>
                 <Row>
                   <Col>
@@ -574,4 +407,4 @@ const HighLights = () => {
   );
 };
 
-export default HighLights;
+export default JobsForYou;

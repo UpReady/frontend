@@ -12,13 +12,24 @@ import {
 import "../Styles/Header.css";
 import { Link } from "react-router-dom";
 import HeaderLogo from "../Icons/HeaderLogo";
+import ProfilePic from "../img/profile-pic.png";
 
 function Header() {
   return (
     <Container fluid>
       <Row>
-        <Col lg={5}>
-          <Form.Control className="mt-4 mx-lg-4" type="text" placeholder="Ara" />
+        <Col lg={1}>
+          <div className="p-lg-4">
+            <HeaderLogo />
+          </div>
+        </Col>
+        <Col lg={4}>
+          <span>{HeaderLogo}</span>
+          <Form.Control
+            className="mt-4 mx-lg-4"
+            type="text"
+            placeholder="Arama"
+          />
         </Col>
         <Col lg={7}>
           <Navbar expand="lg" className="bg-body-tertiary">
@@ -27,40 +38,55 @@ function Header() {
               <Nav className="me-auto">
                 <Link to="/">
                   <NavItem>
-                    <div className="header-tab px-lg-3 mt-lg-3 mb-lg-3">
+                    <div className="header-tab px-lg-3 mt-lg-4 mb-lg-3">
                       Anasayfa
+                    </div>
+                  </NavItem>
+                </Link>
+                <Link to="/is-ilanlari">
+                  <NavItem>
+                    <div className="header-tab px-lg-3 mt-lg-4 mb-lg-3">
+                      İş İlanları
                     </div>
                   </NavItem>
                 </Link>
                 <Link to="/vizyonumuz">
                   <NavItem>
-                    <div className="header-tab px-lg-3 mt-lg-3 mb-lg-3">
-                      Vizyonumuz
+                    <div className="header-tab px-lg-3 mt-lg-4 mb-lg-3">
+                      Hakkımızda
                     </div>
                   </NavItem>
                 </Link>
                 <Link to="/sss">
                   <NavItem>
-                    <div className="header-tab px-lg-3 mt-lg-3 mb-lg-3">
+                    <div className="header-tab px-lg-3 mt-lg-4 mb-lg-3">
                       S.S.S.
                     </div>
                   </NavItem>
                 </Link>
                 <Link to="/teknoloji">
                   <NavItem>
-                    <div className="header-tab px-lg-3 mt-lg-3 mb-lg-3">
-                      Blog
+                    <div className="header-tab px-lg-3 mt-lg-4 mb-lg-3">
+                      Blog & Haberler
                     </div>
                   </NavItem>
                 </Link>
+                {/* <Link to="/profile">
+                  <NavItem>
+                    <div className="header-tab px-lg-3 mt-lg-4 mb-lg-3 px-lg-3 row">
+                      <div className="col-lg-12">Hoş geldin Aysel</div>
+                    </div>
+                  </NavItem>
+                </Link> */}
                 <Link to="/giris-yap">
                   <NavItem>
-                    <div className="header-tab px-lg-3 mx-lg-5 px-lg-5 mt-lg-3 mb-lg-3">
-                     <b> Giriş Yap </b>
+                    <div className="header-tab px-lg-3 mx-lg-5 px-lg-5 mt-lg-4 mb-lg-3">
+                      <div className="login-header-btn px-lg-3 pt-lg-1 pb-lg-1">
+                        Giriş Yap
+                      </div>
                     </div>
                   </NavItem>
                 </Link>
-              
               </Nav>
             </Navbar.Collapse>
           </Navbar>

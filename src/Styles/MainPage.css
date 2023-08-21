@@ -11,15 +11,15 @@
   border-radius: 5px !important;
   background: #fff !important;
   border-color: #fff !important;
-  font-family: "Cardo", serif !important;
+  font-family: "Jost", serif !important;
   border-color: #e1e5ef !important;
 }
 .header-highlights {
-  color: #202122;
+  color: #2d2d2d;
   font-family: Cardo;
   font-size: 32px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: normal;
 }
 .card {

@@ -1,6 +1,6 @@
 import React from "react";
 
-function HeaderLogo({ width = 20, height = 20, ...rest }) {
+function HeaderLogo({ width = 40, height = 40, ...rest }) {
   return (
     <svg
       width={width}

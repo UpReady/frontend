@@ -14,6 +14,7 @@ import BlogDetails from "./Pages/BlogDetails";
 import UserProfile from "./Pages/UserProfile";
 import SSS from "./Pages/SSS";
 import AboutUs from "./Pages/AboutUs";
+import SearchJobScreen from "./Pages/SearchJobScreen";
 
 function App() {
   
@@ -39,6 +40,7 @@ function App() {
           <Route path="/kullanici-profili" element={<UserProfile />} />
           <Route path="/sss" element={<SSS />} />
           <Route path="/vizyonumuz" element={<AboutUs />} />
+          <Route path="/is-ilanlari" element={<SearchJobScreen />} />
         </Routes>
       </BrowserRouter>
       <Footer />

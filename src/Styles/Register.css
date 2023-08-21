@@ -11,10 +11,10 @@
   background: #010921;
   border-color: #010921;
   color: #ffffff;
-  font-family: Cardo;
+  font-family: Jost;
   font-size: 20px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: normal;
 }
 .submit-btn:hover {
@@ -22,16 +22,16 @@
   background: #010921;
   border-color: #010921;
   color: #c9cdd7;
-  font-family: Cardo;
+  font-family: Jost;
   font-size: 20px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: normal;
 }
 .form-label {
   color: #000 !important;
-  font-family: Cardo !important;
-  font-size: 20px !important;
+  font-family: Jost !important;
+  font-size: 16px !important;
   font-style: normal;
   font-weight: 500 !important;
 }
@@ -60,5 +60,5 @@
   background-color: #f5f7ff;
 }
 .form-check-label{
-  font-family: Cardo !important;
+  font-family: Jost !important;
 }

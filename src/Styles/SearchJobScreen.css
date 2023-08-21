@@ -1,0 +1,46 @@
+.bg-jobscreen-color {
+  background-color: rgb(246, 246, 251);
+}
+.jobs-for-you {
+  color: #52575c;
+  font-family: Cardo;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.companies-card {
+  background-color: white;
+  border-radius: 10px;
+}
+.position-name {
+  color: #52575c;
+  font-family: Jost;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.company-name {
+  color: #52575c;
+  font-family: Jost;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.location-name {
+  color: #a9a9a9;
+  font-family: Jost;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.line-companies {
+  border-bottom: 1px solid #eaf0ff;
+}
+.form-select {
+  font-family: Jost;
+  font-weight: 500 !important;
+}
