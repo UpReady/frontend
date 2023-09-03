@@ -18,12 +18,12 @@ function Header() {
   return (
     <Container fluid>
       <Row>
-        <Col lg={1}>
-          <div className="p-lg-4">
-            <HeaderLogo />
+        <Col lg={1} sm={2} xs={2}>
+          <div className="p-lg-4 py-sm-4">
+            <HeaderLogo width="100%"/>
           </div>
         </Col>
-        <Col lg={4}>
+        <Col lg={4} sm={8} xs={8}>
           <span>{HeaderLogo}</span>
           <Form.Control
             className="mt-4 mx-lg-4"
@@ -31,7 +31,7 @@ function Header() {
             placeholder="Arama"
           />
         </Col>
-        <Col lg={7}>
+        <Col lg={7} sm={2} xs={2}>
           <Navbar expand="lg" className="bg-body-tertiary">
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">

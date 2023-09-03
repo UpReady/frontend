@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Container } from "react-bootstrap";
 import BlogMain from "../Components/BlogMain";
 import HighLights from "../Components/HighLights";
 import MainArea from "../Components/MainArea";
@@ -8,7 +8,7 @@ import SSSMain from "../Components/SSSMain";
 
 function MainPage() {
   return (
-    <React.Fragment>
+    <Container>
       <MainArea />
       <HighLights />
       <Row>
@@ -22,7 +22,7 @@ function MainPage() {
         </Col>
       </Row>
       <RoadMapMain/>
-    </React.Fragment>
+    </Container>
   );
 }
 

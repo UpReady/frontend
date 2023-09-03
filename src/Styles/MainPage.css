@@ -134,3 +134,19 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 }
+
+@media (max-width: 767px) {
+  .main-first-text{
+    color: #0c1b9b;
+    font-weight: 600;
+    font-family: Cardo;
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  
+}
+@media (min-width: 1024px) {
+ 
+}

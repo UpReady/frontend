@@ -9,7 +9,7 @@ import Whatsapp from '../img/whatsapp.svg';
 function BlogDetails() {
   return (
     <Container fluid>
-      <div className="blog-header text-center">DERİN ÖĞRENME PROBLEMLERİ</div>
+      <div className="blog-header text-center mt-4 mb-4">DERİN ÖĞRENME PROBLEMLERİ</div>
       <div className="details-container mt-5 mb-5">
         <Row>
           <Col lg={6} xs={12} sm={12}>

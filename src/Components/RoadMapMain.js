@@ -9,7 +9,7 @@ const RoadMapMain = () => {
       <div className="roadmap-title mt-lg-5">
         5 adımda istediğin işe ulaşabilirsin !
       </div>
-      <Image src={RoadMapImg}/>
+      <Image src={RoadMapImg} width="100%"/>
     </Container>
   );
 };

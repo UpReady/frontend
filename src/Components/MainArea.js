@@ -9,13 +9,13 @@ function MainArea() {
       <div className="pb-lg-3 p-0">
         <Row>
           <Col lg={6} xs={12} sm={12}>
-            <div className="main-first-text mt-lg-5 pt-lg-5 mx-lg-3">
+            <div className="main-first-text mt-5 pt-5 mx-lg-3">
             İster ofiste, ister nomad! İş bul, hazırlan, başvur, kazan!
             </div>
           </Col>
           <Col lg={6} xs={12} sm={12}>
             <div className="">
-              <Image className="" src={MainImg} width="130%" />
+              <Image className="" src={MainImg} width="100%" />
             </div>
           </Col>
         </Row>{" "}
