@@ -6,7 +6,7 @@ export const loginUser = createAsyncThunk(
   "auth/login",
   async (userCredentials) => {
     const request = await axios.post(
-      `http://localhost:3001/auth/login`,
+      `http://45.143.98.151/auth/login`,
       userCredentials
     );  
     const response = await request.data.data;

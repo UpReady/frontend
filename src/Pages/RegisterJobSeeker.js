@@ -12,7 +12,7 @@ const RegisterJobSeeker = () => {
   const [password, setPassword] = useState("");
   const [kvkk, setKvkk] = useState("");
   const [validated, setValidated] = useState(false);
-  const apiURL = "http://localhost:3001";
+  const apiURL = "http://45.143.98.151";
 
   const handleChangeLastName = (e) => {
     setLastName(e.target.value);
