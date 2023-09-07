@@ -15,6 +15,7 @@ import UserProfile from "./Pages/UserProfile";
 import SSS from "./Pages/SSS";
 import AboutUs from "./Pages/AboutUs";
 import SearchJobScreen from "./Pages/SearchJobScreen";
+import LoginRedux from "./Pages/LoginRedux";
 
 function App() {
   return (
@@ -31,7 +32,8 @@ function App() {
             path="/is-arayan-hesabi-olustur"
             element={<RegisterJobSeeker />}
           />
-          <Route path="/giris-yap" element={<Login />} />
+          {/* <Route path="/giris-yap" element={<Login />} /> */}
+          <Route path="/giris-yap" element={<LoginRedux />} />
           <Route path="/teknoloji" element={<BlogTechnology />} />
           <Route path="/egitim" element={<BlogEdu />} />
           <Route path="/firmalar" element={<BlogCompany />} />
