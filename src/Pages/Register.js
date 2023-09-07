@@ -7,7 +7,7 @@ import Form from "react-bootstrap/Form";
 
 const apiURL = process.env.REACT_APP_API_URL;
 
-const RegisterJobSeeker = () => {
+const Register = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -67,26 +67,7 @@ const RegisterJobSeeker = () => {
   return (
     <Container fluid>
         <div className="mt-5 mb-5 row justify-content-center">
-        {/* <Col lg={4} sm={12}>
-          <Row>
-            <Col lg={6} sm={6} xs={6}>
-            <a href="/isveren-hesabi-olustur">
-              <div className="nonselected-tab text-center pt-lg-3 pb-lg-3">
-                İşveren
-              </div>
-              </a>
-            </Col>
-            <Col lg={6} sm={6} xs={6}>
-            <a href="/is-arayan-hesabi-olustur">
-              <div className="selected-tab text-center pt-lg-3 pb-lg-3">
-                İş Arayan
-              </div>
-              </a>
-            </Col>
-          </Row>
-        </Col> */}
       </div>
-      {/* <div className="register-header text-center mt-4 mb-4">İŞ ARAYAN HESABI OLUŞTUR</div> */}
       <div className="justify-content-center row">
         <Col lg={4} sm={12}>
           <Form noValidate validated={validated} onSubmit={handleSubmit}>
@@ -172,4 +153,4 @@ const RegisterJobSeeker = () => {
   );
 };
 
-export default RegisterJobSeeker;
+export default Register;

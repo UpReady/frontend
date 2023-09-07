@@ -4,8 +4,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainPage from "./Pages/MainPage";
 import Header from "./Layout/Header";
 import Login from "./Pages/Login";
-import RegisterEmployer from "./Pages/RegisterEmployer";
-import RegisterJobSeeker from "./Pages/RegisterJobSeeker";
 import Footer from "./Layout/Footer";
 import BlogTechnology from "./Pages/BlogTechnology";
 import BlogEdu from "./Pages/BlogEdu";
@@ -16,6 +14,7 @@ import SSS from "./Pages/SSS";
 import AboutUs from "./Pages/AboutUs";
 import SearchJobScreen from "./Pages/SearchJobScreen";
 import LoginRedux from "./Pages/LoginRedux";
+import Register from "./Pages/Register";
 
 function App() {
   return (
@@ -24,14 +23,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<MainPage />} />
-          <Route
-            path="/isveren-hesabi-olustur"
-            element={<RegisterEmployer />}
-          />
-          <Route
-            path="/hesap-olustur"
-            element={<RegisterJobSeeker />}
-          />
+          <Route path="/hesap-olustur" element={<Register />} />
           {/* <Route path="/giris-yap" element={<Login />} /> */}
           <Route path="/giris-yap" element={<LoginRedux />} />
           <Route path="/teknoloji" element={<BlogTechnology />} />
