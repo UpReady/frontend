@@ -29,7 +29,7 @@ function App() {
             element={<RegisterEmployer />}
           />
           <Route
-            path="/is-arayan-hesabi-olustur"
+            path="/hesap-olustur"
             element={<RegisterJobSeeker />}
           />
           {/* <Route path="/giris-yap" element={<Login />} /> */}
@@ -45,7 +45,7 @@ function App() {
           {/* <Route path="/profil" element={<UserProfile />} /> */}
         </Routes>
       </BrowserRouter>
-      <Footer />
+      {/* <Footer /> */}
     </React.Fragment>
   );
 }

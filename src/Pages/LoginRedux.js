@@ -28,9 +28,9 @@ const LoginRedux = () => {
     });
   };
   return (
-    <div className="mt-5">
+    <div className="mt-5 container col-lg-3 col-12">
       <form onSubmit={handleLoginEvent}>
-        <label >Email :</label>
+        <label className="form-check-label mb-2">Email :</label>
         <input
           type="email"
           required
@@ -39,7 +39,7 @@ const LoginRedux = () => {
           onChange={(e) => setEmail(e.target.value)}
         />
         <br />
-        <label>Şifre :</label>
+        <label className="form-check-label">Şifre :</label>
         <input
           type="password"
           required
@@ -48,13 +48,29 @@ const LoginRedux = () => {
           onChange={(e) => setPassword(e.target.value)}
         />
         <br />
-        <button type="submit" className="btn btn-success btn-md">
-          {loading ? "Loading..." : "Giriş Yap"}
-        </button>
-        {error &&(
-            <div className="alert alert-danfer" role='alert'>{error}</div>
-        )}
+        <a href="/sifremi-unuttum">
+          <div className="row justify-content-end mx-1 forget-password">
+            şifremi unuttum
+          </div>
+        </a>
+
+        <div className="text-center">
+          <button type="submit" className="submit-btn col">
+            {loading ? "Loading..." : "Giriş Yap"}
+          </button>
+          {error && (
+            <div className="alert alert-danger" role="alert">
+              {error}
+            </div>
+          )}
+        </div>
       </form>
+      <a href="/hesap-olustur">
+      <div className="create-account-text text-center mt-5">
+        Hesabınız yok mu ? <b> Hesap Oluştur</b>
+      </div>
+      </a>
+      
     </div>
   );
 };

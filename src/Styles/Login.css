@@ -43,3 +43,12 @@ a{
   border: 1px solid #ecf0fd;
   border-radius: 10px;
 }
+.forget-password{
+  font-family:Jost,sans-serif;
+  font-size: 14px;
+  color: #000;
+}
+.create-account-text{
+  font-family:Jost,sans-serif;
+  color: #000;
+}
