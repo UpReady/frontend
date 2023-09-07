@@ -5,6 +5,8 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 // import axios from "axios";
 
+const apiURL = process.env.REACT_APP_API_URL;
+
 const RegisterJobSeeker = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -12,7 +14,7 @@ const RegisterJobSeeker = () => {
   const [password, setPassword] = useState("");
   const [kvkk, setKvkk] = useState("");
   const [validated, setValidated] = useState(false);
-  const apiURL = "http://45.143.98.151";
+
 
   const handleChangeLastName = (e) => {
     setLastName(e.target.value);
