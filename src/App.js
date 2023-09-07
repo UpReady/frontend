@@ -42,6 +42,7 @@ function App() {
           <Route path="/sss" element={<SSS />} />
           <Route path="/vizyonumuz" element={<AboutUs />} />
           <Route path="/is-ilanlari" element={<SearchJobScreen />} />
+          <Route path="profil" element={<UserProfile />} />
           {/* <Route path="/profil" element={<UserProfile />} /> */}
         </Routes>
       </BrowserRouter>

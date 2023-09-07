@@ -7,6 +7,7 @@ const LoginRedux = () => {
   // states
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [status, setStatus] = useState("");
 
   // redux state
   const { loading, error } = useSelector((state) => state.user);
@@ -24,6 +25,7 @@ const LoginRedux = () => {
         setEmail("");
         setPassword("");
         navigate("/");
+        setStatus(result.status)
       }
     });
   };
@@ -61,16 +63,16 @@ const LoginRedux = () => {
           {error && (
             <div className="alert alert-danger" role="alert">
               {error}
+              {console.log("hata varsa", status)}
             </div>
           )}
         </div>
       </form>
       <a href="/hesap-olustur">
-      <div className="create-account-text text-center mt-5">
-        Hesabınız yok mu ? <b> Hesap Oluştur</b>
-      </div>
+        <div className="create-account-text text-center mt-5">
+          Hesabınız yok mu ? <b> Hesap Oluştur</b>
+        </div>
       </a>
-      
     </div>
   );
 };
