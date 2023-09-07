@@ -20,7 +20,9 @@ function Header() {
       <Row>
         <Col lg={1} sm={2} xs={2}>
           <div className="p-lg-4 py-sm-4">
-            <HeaderLogo width="100%"/>
+            <Link to="/">
+              <HeaderLogo width="100%" />
+            </Link>
           </div>
         </Col>
         <Col lg={4} sm={8} xs={8}>

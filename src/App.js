@@ -17,11 +17,10 @@ import AboutUs from "./Pages/AboutUs";
 import SearchJobScreen from "./Pages/SearchJobScreen";
 
 function App() {
-  
   return (
     <React.Fragment>
       <BrowserRouter>
-      <Header/>
+        <Header />
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route
