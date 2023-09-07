@@ -7,10 +7,7 @@ const apiUrl = process.env.REACT_APP_API_URL;
 export const loginUser = createAsyncThunk(
   "auth/login",
   async (userCredentials) => {
-    const request = await axios.post(
-      `${apiUrl}/auth/login`,
-      userCredentials
-    );  
+    const request = await axios.post(`${apiUrl}/auth/login`, userCredentials);
     const response = await request.data.data;
     localStorage.setItem("user", JSON.stringify(response));
     return response;
@@ -23,6 +20,23 @@ const userSlice = createSlice({
     loading: false,
     user: null,
     error: null,
+    isLoggedIn: false,
+  },
+  //   reducers: {
+  //     login: (state, action) => {
+  //       state.user = action.payload;
+  //       state.isLoggedIn = true;
+  //     },
+  //   },
+  reducers: {
+    login: (state, action) => {
+      state.isAuthenticated = true;
+      state.user = action.payload;
+    },
+    logout: (state) => {
+      state.isAuthenticated = false;
+      state.user = null;
+    },
   },
   extraReducers: (builder) => {
     builder
@@ -49,5 +63,7 @@ const userSlice = createSlice({
       });
   },
 });
-
+export const { login, logout } = userSlice.actions;
 export default userSlice.reducer;
+
+
