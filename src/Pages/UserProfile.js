@@ -7,7 +7,7 @@ function UserProfile() {
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
-    fetch(`${apiUrl}/profile/myProfile`)
+    fetch(`${apiUrl}/profile/myProfile`, {credentials:'include'})
       .then((response) => response.json())
       .then((data) => {
         setData(data);

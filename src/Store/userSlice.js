@@ -7,7 +7,7 @@ const apiUrl = process.env.REACT_APP_API_URL;
 export const loginUser = createAsyncThunk(
   "auth/login",
   async (userCredentials) => {
-    const request = await axios.post(`${apiUrl}/auth/login`, userCredentials);
+    const request = await axios.post(`${apiUrl}/auth/login`, userCredentials, {withCredentials:true});
     const response = await request.data.data;
     localStorage.setItem("user", JSON.stringify(response));
     return response;
