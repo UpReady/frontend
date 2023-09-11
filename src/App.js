@@ -32,7 +32,7 @@ function App() {
           <Route path="/haber-detay:id" element={<BlogDetails />} />
           <Route path="/kullanici-profili" element={<UserProfile />} />
           <Route path="/sss" element={<SSS />} />
-          <Route path="/vizyonumuz" element={<AboutUs />} />
+          <Route path="/hakkimizda" element={<AboutUs />} />
           <Route path="/is-ilanlari" element={<SearchJobScreen />} />
           <Route path="profil" element={<UserProfile />} />
           {/* <Route path="/profil" element={<UserProfile />} /> */}
