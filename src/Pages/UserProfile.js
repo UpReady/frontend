@@ -6,13 +6,13 @@ import Form from "react-bootstrap/Form";
 const apiUrl = process.env.REACT_APP_API_URL;
 
 function UserProfile() {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState("");
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     fetch(`${apiUrl}/profile/myProfile`, { credentials: "include" })
       .then((response) => response.json())
-      .then((data) => {
-        setData(data);
+      .then((res) => {
+        setData(res.data);
         setIsLoading(false);
       })
       .catch((error) => {
@@ -20,6 +20,8 @@ function UserProfile() {
         setIsLoading(false);
       });
   }, []);
+
+  
 
   return (
     <Container>
@@ -29,31 +31,40 @@ function UserProfile() {
           <div className="col-12 col-lg-4 mb-3">
             <Form.Group className="mb-3" controlId="firstName">
               <Form.Label>Adınız :</Form.Label>
-              <Form.Control type="text" placeholder="Aysel" />
+              <Form.Control
+                type="text"
+                placeholder={data?.profile?.firstName}
+              />
             </Form.Group>
           </div>
           <div className="col-12 col-lg-4 mb-3">
             <Form.Group className="mb-3" controlId="lastName">
               <Form.Label>Soyadınız :</Form.Label>
-              <Form.Control type="text" placeholder="Unlu" />
+              <Form.Control type="text" placeholder={data?.profile?.lastName} />
             </Form.Group>
           </div>
           <div className="col-12 col-lg-4 mb-3">
-            <Form.Group className="mb-3" controlId="phone">
+            <Form.Group className="mb-3" controlId="email">
               <Form.Label>E-mail adresiniz :</Form.Label>
-              <Form.Control type="text" placeholder="Aysel" />
+              <Form.Control type="email" placeholder={data?.email} />
             </Form.Group>
           </div>
           <div className="col-12 col-lg-4 mb-3">
-            <Form.Group className="mb-3" controlId="firstName">
+            <Form.Group className="mb-3" controlId="title">
               <Form.Label>Unvanınız :</Form.Label>
-              <Form.Control type="text" placeholder="Aysel" />
+              <Form.Control type="text" placeholder="" />
             </Form.Group>
           </div>
           <div className="col-12 col-lg-4 mb-3">
             <Form.Group className="mb-3" controlId="lastName">
               <Form.Label>Yaşadığınız Şehir :</Form.Label>
-              <Form.Control type="text" placeholder="Unlu" />
+              <Form.Control type="text" placeholder={data?.profile?.city} />
+            </Form.Group>
+          </div>
+          <div className="col-12 col-lg-4 mb-3">
+            <Form.Group className="mb-3" controlId="lastName">
+              <Form.Label>Profil Fotoğrafınız :</Form.Label>
+              <Form.Control type="file" placeholder={data?.profile?.city} />
             </Form.Group>
           </div>
         </div>
