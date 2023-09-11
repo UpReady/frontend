@@ -91,22 +91,6 @@ const Companies = () => {
             </Col>
           </Row>
         </div>
-        <div className="line-companies p-2">
-          <Row>
-            <Col lg={4}>
-              <div className="p-3">
-                <Image src={CompanyLogo} />
-              </div>
-            </Col>
-            <Col lg={8}>
-              <div className="position-name">Social Media Expert</div>
-              <div className="company-name">Ericsson</div>
-              <div className="location-name">
-                <LocationIcon /> İstanbul
-              </div>
-            </Col>
-          </Row>
-        </div>
       </div>
     </div>
   );

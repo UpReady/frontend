@@ -11,7 +11,7 @@ const SearchJobScreen = () => {
   return (
     <Container fluid className="bg-jobscreen-color">
       <div>
-        <div className="jobs-for-you mx-lg-2 pt-lg-5 pb-lg-3">
+        <div className="jobs-for-you mx-lg-2 pt-lg-5 pb-lg-3 pt-3 pb-3">
           Sizin için öne çıkan ilanlar
         </div>
         <JobsForYou />
