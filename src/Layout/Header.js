@@ -19,7 +19,7 @@ function Header() {
     <Container fluid>
       <Row>
         <Col lg={1} sm={2} xs={2}>
-          <div className="p-lg-4 py-sm-4 mt-2">
+          <div className="p-lg-3 p-md-0 py-sm-4 mt-2">
             <Link to="/">
               <HeaderLogo width="100%" />
             </Link>
