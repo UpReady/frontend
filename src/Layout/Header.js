@@ -25,7 +25,14 @@ const Header = () => {
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                  Offcanvas
+                  <div className="row">
+                    <div className="col-3">
+                    <HeaderLogo width="100%" />
+                    </div>
+                    <div className="col-9 mt-1">
+                      UpReady
+                    </div>
+                  </div>
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
