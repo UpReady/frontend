@@ -32,24 +32,26 @@ const HighLights = () => {
               <Carousel.Item>
                 <Row>
                   <Col>
-                    <div className="card px-lg-2 pt-lg-2">
-                      <Row>
-                        <Col lg={4}>
-                          <Image className="p-2" src={CardImg} />
-                        </Col>
-                        <Col lg={8}>
-                          <div className="job-style mt-md-n3">Ericsson</div>
+                    <a href="/ilan-detay:id">
+                      <div className="card px-lg-2 pt-lg-2">
+                        <Row>
+                          <Col lg={4}>
+                            <Image className="p-2" src={CardImg} />
+                          </Col>
+                          <Col lg={8}>
+                            <div className="job-style mt-md-n3">Ericsson</div>
 
-                          <div className="job-location">
-                            {" "}
-                            <LocationIcon /> İstanbul
-                          </div>
-                          <div className="job-title pt-lg-4 pb-lg-4">
-                            Backend Developer
-                          </div>
-                        </Col>
-                      </Row>
-                    </div>
+                            <div className="job-location">
+                              {" "}
+                              <LocationIcon /> İstanbul
+                            </div>
+                            <div className="job-title pt-lg-4 pb-lg-4">
+                              Backend Developer
+                            </div>
+                          </Col>
+                        </Row>
+                      </div>
+                    </a>
                   </Col>
                   <Col>
                     <div className="card px-lg-2 pt-lg-2">
@@ -287,7 +289,7 @@ const HighLights = () => {
             <Carousel activeIndex={index} onSelect={handleSelect}>
               <Carousel.Item>
                 <div className="card mb-3 p-2">
-                  {/* <a href="/ilan-detay:id"> */}
+                  <a href="/ilan-detay:id">
                   <Row>
                     <Col xs={4}>
                       {" "}
@@ -309,10 +311,10 @@ const HighLights = () => {
                       </div>
                     </Col>
                   </Row>
-                  {/* </a> */}
+                  </a>
                 </div>
                 <div className="card mb-3 p-2">
-                  {/* <a href="/ilan-detay:id"> */}
+                  <a href="/ilan-detay:id">
                   <Row>
                     <Col xs={4}>
                       {" "}
@@ -334,10 +336,10 @@ const HighLights = () => {
                       </div>
                     </Col>
                   </Row>
-                  {/* </a> */}
+                  </a>
                 </div>
                 <div className="card mb-3 p-2">
-                  {/* <a href="/ilan-detay:id"> */}
+                  <a href="/ilan-detay:id">
                   <Row>
                     <Col xs={4}>
                       {" "}
@@ -359,12 +361,12 @@ const HighLights = () => {
                       </div>
                     </Col>
                   </Row>
-                  {/* </a> */}
+                  </a>
                 </div>
               </Carousel.Item>
               <Carousel.Item>
                 <div className="card mb-3 p-2">
-                  {/* <a href="/ilan-detay:id"> */}
+                  <a href="/ilan-detay:id">
                   <Row>
                     <Col xs={4}>
                       {" "}
@@ -386,10 +388,10 @@ const HighLights = () => {
                       </div>
                     </Col>
                   </Row>
-                  {/* </a> */}
+                  </a>
                 </div>
                 <div className="card mb-3 p-2">
-                  {/* <a href="/ilan-detay:id"> */}
+                  <a href="/ilan-detay:id">
                   <Row>
                     <Col xs={4}>
                       {" "}
@@ -411,10 +413,10 @@ const HighLights = () => {
                       </div>
                     </Col>
                   </Row>
-                  {/* </a> */}
+                  </a>
                 </div>
                 <div className="card mb-3 p-2">
-                  {/* <a href="/ilan-detay:id"> */}
+                  <a href="/ilan-detay:id">
                   <Row>
                     <Col xs={4}>
                       {" "}
@@ -436,12 +438,12 @@ const HighLights = () => {
                       </div>
                     </Col>
                   </Row>
-                  {/* </a> */}
+                  </a>
                 </div>
               </Carousel.Item>
               <Carousel.Item>
                 <div className="card mb-3 p-2">
-                  {/* <a href="/ilan-detay:id"> */}
+                  <a href="/ilan-detay:id">
                   <Row>
                     <Col xs={4}>
                       {" "}
@@ -463,10 +465,10 @@ const HighLights = () => {
                       </div>
                     </Col>
                   </Row>
-                  {/* </a> */}
+                  </a>
                 </div>
                 <div className="card mb-3 p-2">
-                  {/* <a href="/ilan-detay:id"> */}
+                  <a href="/ilan-detay:id">
                   <Row>
                     <Col xs={4}>
                       {" "}
@@ -488,10 +490,10 @@ const HighLights = () => {
                       </div>
                     </Col>
                   </Row>
-                  {/* </a> */}
+                  </a>
                 </div>
                 <div className="card mb-3 p-2">
-                  {/* <a href="/ilan-detay:id"> */}
+                  <a href="/ilan-detay:id">
                   <Row>
                     <Col xs={4}>
                       {" "}
@@ -513,10 +515,10 @@ const HighLights = () => {
                       </div>
                     </Col>
                   </Row>
-                  {/* </a> */}
+                  </a>
                 </div>
                 <div className="card mb-3 p-2">
-                  {/* <a href="/ilan-detay:id"> */}
+                  <a href="/ilan-detay:id">
                   <Row>
                     <Col xs={4}>
                       {" "}
@@ -538,10 +540,10 @@ const HighLights = () => {
                       </div>
                     </Col>
                   </Row>
-                  {/* </a> */}
+                  </a>
                 </div>
                 <div className="card mb-3 p-2">
-                  {/* <a href="/ilan-detay:id"> */}
+                  <a href="/ilan-detay:id">
                   <Row>
                     <Col xs={4}>
                       {" "}
@@ -563,7 +565,7 @@ const HighLights = () => {
                       </div>
                     </Col>
                   </Row>
-                  {/* </a> */}
+                  </a>
                 </div>
               </Carousel.Item>
             </Carousel>

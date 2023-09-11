@@ -19,7 +19,7 @@ function Header() {
     <Container fluid>
       <Row>
         <Col lg={1} sm={2} xs={2}>
-          <div className="p-lg-4 py-sm-4">
+          <div className="p-lg-4 py-sm-4 mt-2">
             <Link to="/">
               <HeaderLogo width="100%" />
             </Link>
@@ -28,7 +28,7 @@ function Header() {
         <Col lg={4} sm={8} xs={8}>
           <span>{HeaderLogo}</span>
           <Form.Control
-            className="mt-4 mx-lg-4"
+            className="mt-2 mt-lg-4 mx-lg-4"
             type="text"
             placeholder="Arama"
           />
@@ -40,7 +40,7 @@ function Header() {
               <Nav className="me-auto">
                 <Link to="/">
                   <NavItem>
-                    <div className="header-tab px-lg-3 mt-lg-4 mb-lg-3">
+                    <div className="header-tab px-lg-3 mt-lg-4 mt-2 mb-lg-3">
                       Anasayfa
                     </div>
                   </NavItem>

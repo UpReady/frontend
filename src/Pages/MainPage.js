@@ -18,7 +18,9 @@ function MainPage() {
           </a>
         </Col>
         <Col lg={6} sm={12}>
+        <a href="/sss">
           <SSSMain />
+          </a>
         </Col>
       </Row>
       <RoadMapMain/>
