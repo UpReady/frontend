@@ -52,3 +52,11 @@ a{
   font-family:Jost,sans-serif;
   color: #000;
 }
+.welcome-text{
+  color: #2d2d2d;
+  font-family: Jost;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}

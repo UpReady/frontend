@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { loginUser } from "../Store/userSlice";
+import LoginLogo from "../img/login-logo.png";
 
 const LoginRedux = () => {
   // states
@@ -25,12 +26,18 @@ const LoginRedux = () => {
         setEmail("");
         setPassword("");
         navigate("/");
-        setStatus(result.status)
+        setStatus(result.status);
       }
     });
   };
   return (
     <div className="mt-5 container col-lg-3 col-12">
+      <div className="logo-container text-center mb-2 pb-4">
+        <img src={LoginLogo} width="40%" />
+      </div>
+      <div className="welcome-text text-center mb-4 pb-4">
+        UpReady'e Hoş geldiniz
+      </div>
       <form onSubmit={handleLoginEvent}>
         <label className="form-check-label mb-2">Email :</label>
         <input
@@ -49,15 +56,15 @@ const LoginRedux = () => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <br />
+
         <a href="/sifremi-unuttum">
-          <div className="row justify-content-end mx-1 forget-password">
+          <div className="row justify-content-end mx-1 forget-password mb-2 mt-2">
             şifremi unuttum
           </div>
         </a>
 
         <div className="text-center">
-          <button type="submit" className="submit-btn col">
+          <button type="submit" className="submit-btn col-12 mt-2">
             {loading ? "Loading..." : "Giriş Yap"}
           </button>
           {error && (

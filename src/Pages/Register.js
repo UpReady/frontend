@@ -3,6 +3,7 @@ import { Container, Col, Row, Image } from "react-bootstrap";
 import "../Styles/Register.css";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import LoginLogo from "../img/login-logo.png";
 // import axios from "axios";
 
 const apiURL = process.env.REACT_APP_API_URL;
@@ -14,7 +15,6 @@ const Register = () => {
   const [password, setPassword] = useState("");
   const [kvkk, setKvkk] = useState("");
   const [validated, setValidated] = useState(false);
-
 
   const handleChangeLastName = (e) => {
     setLastName(e.target.value);
@@ -60,13 +60,15 @@ const Register = () => {
       .then((response) => response.json())
       .then((data) => {
         localStorage.setItem("sessionToken", data.token);
-      }).catch(error => {
-        console.error('Hata:', error);
+      })
+      .catch((error) => {
+        console.error("Hata:", error);
       });
   };
   return (
     <Container fluid>
-        <div className="mt-5 mb-5 row justify-content-center">
+      <div className="logo-container text-center mb-4 pb-4">
+        <img src={LoginLogo} width="100" />
       </div>
       <div className="justify-content-center row">
         <Col lg={4} sm={12}>
@@ -82,7 +84,7 @@ const Register = () => {
                     onChange={handleChangeFirstName}
                     required
                   />
-                   <Form.Control.Feedback type="invalid">
+                  <Form.Control.Feedback type="invalid">
                     Lütfen Adınızı Giriniz !
                   </Form.Control.Feedback>
                 </Form.Group>
@@ -112,7 +114,7 @@ const Register = () => {
                 onChange={handleChangeEmail}
                 required
               />
-               <Form.Control.Feedback type="invalid">
+              <Form.Control.Feedback type="invalid">
                 Lütfen Mail Adresinizi Giriniz !
               </Form.Control.Feedback>
             </Form.Group>
@@ -126,7 +128,7 @@ const Register = () => {
                 onChange={handleChangePassword}
                 required
               />
-               <Form.Control.Feedback type="invalid">
+              <Form.Control.Feedback type="invalid">
                 Lütfen Parola Giriniz !
               </Form.Control.Feedback>
             </Form.Group>
@@ -140,12 +142,11 @@ const Register = () => {
                 feedbackType="invalid"
               />
             </Form.Group>
-
-            <Row>
-              <Button className="submit-btn mt-4 mb-4 " type="submit">
+            <div className="row justify-content-center mx-1">
+              <Button className="submit-btn mt-4 mb-4" type="submit">
                 Hesap Oluştur
               </Button>
-            </Row>
+            </div>
           </Form>
         </Col>
       </div>
