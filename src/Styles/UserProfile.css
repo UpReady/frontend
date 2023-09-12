@@ -6,3 +6,47 @@
   font-weight: 500;
   line-height: normal;
 }
+.profile-img-cont {
+  align-items: center;
+  align-self: center;
+}
+.experience-title {
+  color: #52575c;
+  font-family: Jost;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.profile-btn {
+  border: 1px solid #002177;
+  border-radius: 5px;
+  background: #002177;
+  color: #fff;
+  font-family: Jost;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.experience-table {
+  border-radius: 10px;
+  border: 1px solid #ebf0fc;
+  background: #fff;
+}
+.experience-year {
+  color: #0c1b9b;
+  font-family: Jost;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.experience-name {
+  color: #52575c;
+  font-family: Jost;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

@@ -81,7 +81,8 @@ const Header = () => {
                   <Nav.Link href="/teknoloji" className="header-tab">
                     Blog & Haberler{" "}
                   </Nav.Link>
-                  {status === true ? (
+
+                  {status && status === true ? (
                     <>
                       <Nav.Link href="/profil">
                         <div className="header-tab px-lg-3 text-center">
