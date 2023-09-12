@@ -15,7 +15,7 @@ const Header = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [status, setStatus] = useState("");
   useEffect(() => {
-    fetch(`${apiUrl}/profile/myProfile`, { credentials: "include" })
+    fetch(`${apiUrl}/profile/myBasicProfile`, { credentials: "include" })
       .then((response) => response.json())
       .then((res) => {
         setData(res.data);
@@ -85,7 +85,7 @@ const Header = () => {
                     <>
                       <Nav.Link href="/profil">
                         <div className="header-tab px-lg-3 text-center">
-                          Hoş geldin <b>{data.profile.firstName}</b>
+                          Hoş geldin <b>{data.firstName}</b>
                         </div>
                       </Nav.Link>
                     </>
