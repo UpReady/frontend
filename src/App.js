@@ -33,7 +33,7 @@ function App() {
           <Route path="/kullanici-profili" element={<UserProfile />} />
           <Route path="/sss" element={<SSS />} />
           <Route path="/hakkimizda" element={<AboutUs />} />
-          <Route path="/is-ilanlari" element={<SearchJobScreen />} />
+          {/* <Route path="/is-ilanlari" element={<SearchJobScreen />} /> */}
           <Route path="profil" element={<UserProfile />} />
           {/* <Route path="/profil" element={<UserProfile />} /> */}
         </Routes>

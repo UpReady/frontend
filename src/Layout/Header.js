@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
@@ -7,12 +7,34 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import HeaderLogo from "../Icons/HeaderLogo";
+import LogoutIcon from "../Icons/LogoutIcon";
 import "../Styles/Header.css";
+const apiUrl = process.env.REACT_APP_API_URL;
 const Header = () => {
+  const [data, setData] = useState("");
+  const [isLoading, setIsLoading] = useState(true);
+  const [status, setStatus] = useState("");
+  useEffect(() => {
+    fetch(`${apiUrl}/profile/myProfile`, { credentials: "include" })
+      .then((response) => response.json())
+      .then((res) => {
+        setData(res.data);
+        setIsLoading(false);
+        setStatus(res.status);
+      })
+      .catch((error) => {
+        console.error("Veri çekme hatası:", error);
+        setIsLoading(false);
+      });
+  }, []);
   return (
     <>
       {["sm"].map((expand) => (
-        <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3 mt-1">
+        <Navbar
+          key={expand}
+          expand={expand}
+          className="bg-body-tertiary mb-3 mt-1"
+        >
           <Container fluid>
             <Navbar.Brand href="/">
               <HeaderLogo width="100%" />
@@ -27,11 +49,9 @@ const Header = () => {
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
                   <div className="row">
                     <div className="col-3">
-                    <HeaderLogo width="100%" />
+                      <HeaderLogo width="100%" />
                     </div>
-                    <div className="col-9 mt-1">
-                      UpReady
-                    </div>
+                    <div className="col-9 mt-1">UpReady</div>
                   </div>
                 </Offcanvas.Title>
               </Offcanvas.Header>
@@ -61,11 +81,21 @@ const Header = () => {
                   <Nav.Link href="/teknoloji" className="header-tab">
                     Blog & Haberler{" "}
                   </Nav.Link>
-                  <Nav.Link href="/giris-yap">
-                    
-                      <div className="login-header-btn px-lg-3 text-center">Giriş Yap</div>
-                    
-                  </Nav.Link>
+                  {status === true ? (
+                    <>
+                      <Nav.Link href="/profil">
+                        <div className="header-tab px-lg-3 text-center">
+                          Hoş geldin <b>{data.profile.firstName}</b>
+                        </div>
+                      </Nav.Link>
+                    </>
+                  ) : (
+                    <Nav.Link href="/giris-yap">
+                      <div className="login-header-btn px-lg-3 text-center">
+                        Giriş Yap
+                      </div>
+                    </Nav.Link>
+                  )}
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
