@@ -89,6 +89,11 @@ const Header = () => {
                           Hoş geldin <b>{data.firstName}</b>
                         </div>
                       </Nav.Link>
+                      <Nav.Link href="/giris-yap">
+                        <div className="header-tab px-lg-3 text-center">
+                         Çıkış Yap <span><LogoutIcon/></span>
+                        </div>
+                      </Nav.Link>
                     </>
                   ) : (
                     <Nav.Link href="/giris-yap">
